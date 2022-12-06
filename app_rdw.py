@@ -6,6 +6,7 @@ import pandas as pd
 # dashboard title
 st.title("Real-Time / Live Data Science Dashboard")
 
+pd.set_option('display.max_rows', None)
 
 @st.cache(allow_output_mutation=True)
 def load_data():    
